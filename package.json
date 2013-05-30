@@ -1,0 +1,43 @@
+{
+  "name": "grunt-enb",
+  "description": "Making bem project with grunt",
+  "version": "0.1.0",
+  "homepage": "https://github.com/megatolya/grunt-enb",
+  "author": {
+    "name": "Anatoliy Ostrovskiy",
+    "email": "forgetthisbox@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/megatolya/grunt-enb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/megatolya/grunt-enb/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/megatolya/grunt-enb/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "enb": "*",
+    "async": "~0.2.9"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "bem",
+    "enb"
+  ]
+}
