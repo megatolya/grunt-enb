@@ -1,7 +1,7 @@
 {
   "name": "grunt-enb",
   "description": "Making bem project with grunt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/megatolya/grunt-enb",
   "author": {
     "name": "Anatoliy Ostrovskiy",
@@ -32,6 +32,16 @@
     "enb": "*",
     "async": "~0.2.9"
   },
+  "contributors": [
+  {
+    "name" : "Anatoliy Ostrovskiy",
+    "url" : "https://github.com/megatolya"
+  },
+  {
+    "name" : "Mikhail Davydov",
+    "url" : "https://github.com/azproduction"
+  }
+  ],
   "peerDependencies": {
     "grunt": "~0.4.1"
   },
