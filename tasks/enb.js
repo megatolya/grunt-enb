@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                 options = this.options({
                 noLog: false
             }),
-            enbBuilder = enb.createBuilder({ noLog: options.noLog}),
+            enbBuilder = enb.createBuilder(options),
             tasks = [],
             _this = this,
             async = require('async');
