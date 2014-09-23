@@ -8,7 +8,8 @@
 
 'use strict';
 
-function extend (a, b) { for (var x in b) {a[x] = b[x];  } return a; }
+var resolve = require('path').resolve.bind(process.cwd()),
+    extend = function (a, b) { for (var x in b) {a[x] = b[x];  } return a; };
 
 module.exports = function(grunt) {
     var enb = require('enb/lib/server/server-middleware');
@@ -18,9 +19,12 @@ module.exports = function(grunt) {
             return grunt.log.error('no targets provided');
 
         var done = this.async(),
-                options = this.options({
-                noLog: false
-            }),
+            options = extend(this.options({
+                    noLog: false
+                }), {
+                    cdir: resolve(this.options().cdir || './')
+                }
+            ),
             enbBuilder = enb.createBuilder(options),
             tasks = [],
             _this = this,
