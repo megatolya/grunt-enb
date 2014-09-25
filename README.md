@@ -38,7 +38,7 @@ grunt.initConfig({
         },
         options: {
             noLog: true,
-            cdir: 'path/to/bem-project'
+            projectPath: 'path/to/bem-project'
         }
     }
 })

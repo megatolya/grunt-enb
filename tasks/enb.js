@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             options = extend(this.options({
                     noLog: false
                 }), {
-                    cdir: resolve(this.options().cdir || './')
+                    cdir: resolve(this.options().projectPath || './')
                 }
             ),
             enbBuilder = enb.createBuilder(options),
