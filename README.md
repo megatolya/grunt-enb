@@ -37,7 +37,8 @@ grunt.initConfig({
             targets: ['pages-desktop/index/']
         },
         options: {
-            noLog: true
+            noLog: true,
+            projectPath: 'path/to/bem-project'
         }
     }
 })
