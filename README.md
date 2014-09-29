@@ -1,43 +1,46 @@
 # grunt-enb
 
-> Making bem project with grunt
+> Вызов enb из grunt
 
-## Getting Started
-This plugin requires Grunt `~0.4.1`
-
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+## Установка
 
 ```shell
 npm install grunt-enb --save-dev
 ```
 
-Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+После установки в `Gruntfile.js' добавить:
 
 ```js
 grunt.loadNpmTasks('grunt-enb');
 ```
 
-### Overview
-In your project's Gruntfile, add a section named `enb` to the data object passed into `grunt.initConfig()`. Here is an example config that demonstrates all functionality of grunt-enb
+### Настройка
+Пример полного конфига
 
 ```js
 grunt.initConfig({
     enb: {
         firefox: {
+            // функция, которая будет вызвана до enb
             beforeBuild: function () {
                 console.log('beforeBuild');
             },
+            // функция, которая будет вызвана после enb
             afterBuild: function () {
                 console.log('afterBuild');
             },
+            // переменные окружения, с которыми нужно запустить enb
             env: {
                 XJST_ASYNCIFY: 1,
                 BROWSER: 'firefox'
             },
+            // цель. Передавать обязательно
             targets: ['pages-desktop/index/']
         },
         options: {
+            // не выводить лог enb
             noLog: true,
+            // путь до бем проекта, если он отличается от того пути, где находится Gruntfile
             projectPath: 'path/to/bem-project'
         }
     }
