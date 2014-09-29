@@ -8,7 +8,7 @@
 npm install grunt-enb --save-dev
 ```
 
-После установки в `Gruntfile.js' добавить:
+После установки в `Gruntfile.js` добавить:
 
 ```js
 grunt.loadNpmTasks('grunt-enb');
