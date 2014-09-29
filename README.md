@@ -15,7 +15,7 @@ grunt.loadNpmTasks('grunt-enb');
 ```
 
 ### Настройка
-Пример полного конфига
+Пример полного конфига:
 
 ```js
 grunt.initConfig({
