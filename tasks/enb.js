@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         });
         async.parallel(tasks, function (err) {
             if (err)
-                return grunt.log.error(err);
+				return grunt.fail.fatal(err);
 
             _this.data.afterBuild && _this.data.afterBuild();
             done();
