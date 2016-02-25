@@ -33,17 +33,17 @@
     "async": "~0.2.9"
   },
   "contributors": [
-  {
-    "name" : "Anatoliy Ostrovskiy",
-    "url" : "https://github.com/megatolya"
-  },
-  {
-    "name" : "Mikhail Davydov",
-    "url" : "https://github.com/azproduction"
-  }
+    {
+      "name": "Anatoliy Ostrovskiy",
+      "url": "https://github.com/megatolya"
+    },
+    {
+      "name": "Mikhail Davydov",
+      "url": "https://github.com/azproduction"
+    }
   ],
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin",
